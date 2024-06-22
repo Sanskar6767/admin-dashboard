@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  min-content repeat(3, 1fr);;
+    /* height: 100vh; */
+}
+
+.sidebar {
+    background-color: rgb(46, 161, 223);
+    grid-column: 1/2;
+    grid-row: 1/5;
+    padding: 20px ;
+    color: white;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 40px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+.logo h1{
+    font-size: calc(2vw + 1.5vh + 1vmin);
+}
+
+.sidemenu ul{
+    padding: 12px 0;
+}
+
+.sidelist{
+    list-style: none;
+    padding: 10px 12px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    font-size:16px;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}   
+
+.sidelist-img{
+    width: 22px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.header{
+    grid-column: 2/6;
+    grid-row: 1/2;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.945);
+}
+
+.headertop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    /* align-items: center; */
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.search-icon{
+    width: 24px;
+}
+#search{
+    flex-grow: 1;
+    max-width: 400px;
+    background-color: #dfe9e9;
+    border-radius: 25px;
+    border: none;
+}
+
+.topright-option{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.skull{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.skull1{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.name-hi{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 18px;
+}
+
+.hi{
+    font-size: 12px;
+    font-weight: 600;
+}
+.name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    padding: 8px 12px;
+    background-color: rgba(4, 141, 200, 0.911);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.top:hover{
+    transform: scale(0.9);
+}
+
+/* Main section  */
+.main-body{
+    background-color: #dfe9e9;
+    grid-column: 2/6;
+    grid-row: 2/5;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 18px;
+}
+.main-wrapper{
+    /* grid-row: 1/3; */
+}
+
+.rightside{
+    /* grid-row: 1/2; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.grid{
+    /* background-color: rgb(255, 255, 255); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row: auto;
+    gap: 20px;
+}
+
+.cardwrapper{
+    background-color: #fff;
+    padding: 20px 18px;
+    border-left: 8px solid rgb(236, 200, 21);
+    min-height: 80px;
+    border-radius: 6px;
+}
+.text{
+    padding: 10px 0 20px;
+}
+.text{
+    h4{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
+        color: gray;
+        max-width: 60rem;
+    }
+}
+.card-option{
+    display: flex;
+    gap: 18px;
+    justify-content: end;
+
+}
+.card-option img{
+    width: 24px;
+}
+
+/* announcements section  */
+.announceh2{
+    font-size: 1.8vh;
+    padding: 0 0 10px;
+}
+
+.announcements{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.announcecards{
+    padding-bottom: 10px ;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+.announcecards h3{
+    font-size: 1vw;
+}
+.announcecards p{
+    font-size: .8vw;
+    color: rgb(101, 101, 101);
+}
+
+/* Trending section  */
+.trending-wrapper{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+}
+.trending-card{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.trending-card img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.userrate{
+    font-size: 12px;
+}
+.greytrend{
+    font-size: 10px;
+    color:rgb(117, 117, 117)
+}
